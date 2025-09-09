@@ -1,43 +1,65 @@
-# Astro Starter Kit: Minimal
+# Sistema de Propostas RCDNC
 
-```sh
-npm create astro@latest -- --template minimal
+Este projeto Astro contém as propostas de lançamento digital desenvolvidas pela RCDNC para diferentes experts e projetos.
+
+## Estrutura
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
+propostas-rcdnc/
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/          # Componentes compartilhados
+│   ├── layouts/            # Layouts base
+│   └── pages/              # Páginas das propostas
+│       ├── index.astro     # Homepage com lista de propostas
+│       ├── leo-pazdziora.astro  # Proposta Leo
+│       └── escola-furo-humanizado.astro  # Proposta EFH
+├── pesquisas/              # Pesquisas de cada projeto
+│   ├── leo-pazdziora/      # Análise do projeto Leo
+│   └── escola-furo-humanizado/  # Análise do projeto EFH
+├── public/                 # Assets estáticos
+└── README.md
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Propostas Ativas
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### 1. Leo Pazdziora - Resgates com Milhas
+- **URL**: `/leo-pazdziora`
+- **Nicho**: Travel Hacking / Milhas
+- **Status**: ✅ Concluída
+- **Audiência**: 31.6K seguidores
 
-Any static assets, like images, can be placed in the `public/` directory.
+### 2. Escola do Furo Humanizado - Jaqueline Luquini  
+- **URL**: `/escola-furo-humanizado`
+- **Nicho**: Furo Humanizado / Beleza & Saúde
+- **Status**: 🚧 Em desenvolvimento
+- **Audiência**: 7.000+ alunas formadas
 
-## 🧞 Commands
+## Metodologia RCDNC
 
-All commands are run from the root of the project, from a terminal:
+Todas as propostas seguem a metodologia de **Lançamento-Semente**:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. **Validação** - Pelo menos 1 venda
+2. **Baixo risco** - Investimento reduzido  
+3. **Rápida execução** - 4 semanas
+4. **Co-participação** - Parceria nos resultados
 
-## 👀 Want to learn more?
+## Modalidades de Preços
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Sem Co-participação**: Valor fixo
+- **Co-participação 15%**: Valor reduzido + 15% do faturamento
+- **Co-participação 50%**: Valor mínimo + 50% do faturamento
+
+## Comandos
+
+```bash
+npm run dev          # Servidor local
+npm run build        # Build de produção
+npm run preview      # Preview do build
+```
+
+## Contato
+
+**Ricardo Dinucci**  
+Faixa Roxa Insider | CEO RCDNC  
+📧 ricardo.dinucci@rcdnc.com.br  
+📱 +1(212)202-7177

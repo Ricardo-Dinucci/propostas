@@ -1,0 +1,497 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Escola do Furo Humanizado - Proposta RCDNC</title>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<style>
+			* { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+			.font-display { font-family: 'Playfair Display', Georgia, serif; }
+			.gold-gradient { background: linear-gradient(135deg, #FFD031 0%, #F7B801 50%, #E6A200 100%); }
+			.black-gradient { background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); }
+			.shine-effect { 
+				background: linear-gradient(135deg, #FFD031 0%, #FFF 30%, #FFD031 60%, #F7B801 100%);
+				background-size: 200% 200%;
+				animation: shine 3s ease-in-out infinite;
+			}
+			@keyframes shine { 
+				0%, 100% { background-position: 200% 200%; }
+				50% { background-position: 0% 0%; }
+			}
+			.hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+			.hover-lift:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+		</style>
+	</head>
+	<body class="bg-black min-h-screen">
+		<div class="container mx-auto px-4 py-8">
+			<!-- Header Premium -->
+			<header class="text-center mb-16 relative">
+				<div class="black-gradient p-8 rounded-3xl mb-8 relative overflow-hidden">
+					<div class="absolute inset-0 gold-gradient opacity-10"></div>
+					<div class="relative z-10">
+						<!-- Logo EFH -->
+						<div class="mb-6">
+							<img src="/logo-efh.webp" 
+								 alt="Escola do Furo Humanizado - Logo Oficial" 
+								 class="h-20 md:h-24 mx-auto filter drop-shadow-2xl"/>
+						</div>
+						
+						<h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-4 tracking-wide leading-tight">
+							ESCOLA DO FURO
+							<span class="block text-yellow-400 font-display font-bold">HUMANIZADO</span>
+						</h1>
+						<div class="flex items-center justify-center gap-4 mb-6">
+							<img src="/jaqueline-expert.webp" 
+								 alt="Jaqueline Luquini - Expert em Furo Humanizado" 
+								 class="w-20 h-20 rounded-full border-4 border-yellow-400 object-cover shadow-xl"/>
+							<div class="text-left">
+								<p class="text-xl font-bold text-white">Jaqueline Luquini</p>
+								<p class="text-yellow-400 font-medium">Enfermeira & Expert em Furo Humanizado</p>
+							</div>
+						</div>
+						<p class="text-white/90 text-lg italic max-w-2xl mx-auto">
+							"Transformando vidas através do conhecimento profissional e técnicas humanizadas"
+						</p>
+					</div>
+				</div>
+				
+				<div class="gold-gradient p-6 rounded-2xl inline-block hover-lift">
+					<span class="text-black font-bold text-xl">✨ PROPOSTA PERSONALIZADA RCDNC ✨</span>
+				</div>
+			</header>
+
+			<div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+				<!-- Perfil da Expert Jaqueline -->
+				<div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg p-6 border border-yellow-400">
+					<div class="flex items-center mb-4">
+						<div class="bg-gradient-to-r from-yellow-400 to-amber-500 p-1 rounded-full mr-4">
+							<div class="bg-white rounded-full p-2">
+								<span class="text-yellow-600 text-2xl">👩‍⚕️</span>
+							</div>
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-white">Jaqueline Luquini</h3>
+							<p class="text-yellow-400 font-medium">Enfermeira Empreendedora & Expert em Furo Humanizado</p>
+						</div>
+					</div>
+					
+					<div class="bg-yellow-400/10 p-4 rounded-lg mb-4 border border-yellow-400/30">
+						<p class="text-gray-300 italic text-center">
+							"Minha missão é empoderar mulheres através do conhecimento profissional, 
+							proporcionando independência financeira com técnicas humanizadas e seguras."
+						</p>
+					</div>
+					
+					<div class="grid grid-cols-2 gap-4">
+						<div class="text-center">
+							<p class="text-2xl font-bold text-yellow-400">7.000+</p>
+							<p class="text-sm text-gray-400">Alunas Formadas</p>
+						</div>
+						<div class="text-center">
+							<p class="text-2xl font-bold text-yellow-400">12</p>
+							<p class="text-sm text-gray-400">Países Atendidos</p>
+						</div>
+						<div class="text-center">
+							<p class="text-2xl font-bold text-yellow-400">10+</p>
+							<p class="text-sm text-gray-400">Anos de Experiência</p>
+						</div>
+						<div class="text-center">
+							<p class="text-2xl font-bold text-yellow-400">MEC</p>
+							<p class="text-sm text-gray-400">Certificação Oficial</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Produto Atual -->
+				<div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg p-6 border border-yellow-400/30">
+					<h3 class="text-xl font-bold text-white mb-4 flex items-center">
+						📚 Formação EFH Atual
+					</h3>
+					<div class="space-y-4">
+						<div>
+							<h4 class="font-semibold text-yellow-400 mb-2">Estrutura do Curso:</h4>
+							<ol class="list-decimal list-inside text-sm text-gray-300 space-y-1">
+								<li>Formação Empreendedora Jaleco Preto</li>
+								<li>Método Care de Furo Humanizado</li>
+								<li>Treinamento de Marketing e Vendas 5K</li>
+								<li>Curso de Body Piercing</li>
+							</ol>
+						</div>
+						<div>
+							<h4 class="font-semibold text-yellow-400 mb-2">Preços:</h4>
+							<div class="text-sm text-gray-300 space-y-1">
+								<p><strong class="text-white">Valor cheio:</strong> R$ 1.997</p>
+								<p><strong class="text-white">Parcelado:</strong> 12x R$ 99,73</p>
+								<p><strong class="text-white">À vista:</strong> R$ 997</p>
+								<p><strong class="text-white">Garantia:</strong> 7 dias</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Novas Propostas de Serviços -->
+				<div class="lg:col-span-2 relative">
+					<div class="black-gradient p-8 rounded-3xl relative overflow-hidden mb-8">
+						<div class="absolute inset-0 gold-gradient opacity-5"></div>
+						<div class="relative z-10">
+							<h3 class="text-3xl font-display font-bold text-white mb-2 text-center">
+								SERVIÇOS DIGITAIS PREMIUM
+							</h3>
+							<p class="text-yellow-400 text-center font-medium mb-8">
+								Soluções desenvolvidas especificamente para a Escola do Furo Humanizado
+							</p>
+					
+							<!-- Serviço 1: Automação Instagram -->
+							<div class="bg-white rounded-2xl shadow-xl p-8 mb-6 hover-lift border-2 border-yellow-400/20">
+								<div class="flex items-center mb-6">
+									<div class="gold-gradient p-4 rounded-2xl mr-6 shine-effect">
+										<span class="text-black text-2xl font-bold">📱</span>
+									</div>
+									<div class="flex-grow">
+										<h4 class="text-2xl font-display font-bold text-gray-900 mb-2">AUTOMAÇÃO INSTAGRAM</h4>
+										<p class="text-gray-600 font-medium">Sistema completo de posting automatizado</p>
+									</div>
+									<div class="text-right bg-black p-4 rounded-xl">
+										<p class="text-3xl font-black text-yellow-400">R$ 197</p>
+										<p class="text-white text-sm font-medium">por mês</p>
+									</div>
+								</div>
+						
+								<!-- Case de Sucesso - Prova Social -->
+								<div class="bg-gradient-to-r from-green-900 to-green-800 p-6 rounded-xl mb-6 relative overflow-hidden">
+									<div class="absolute inset-0 gold-gradient opacity-10"></div>
+									<div class="relative z-10">
+										<h5 class="font-black text-yellow-400 mb-4 text-center text-xl">
+											🏆 CASE DE SUCESSO COMPROVADO
+										</h5>
+										<div class="grid md:grid-cols-2 gap-6 items-center">
+											<div>
+												<img src="/case-sucesso-instagram.jpg" 
+													 alt="Case de sucesso - 5.5 milhões de visualizações" 
+													 class="w-full rounded-xl shadow-xl border-2 border-yellow-400"/>
+											</div>
+											<div class="text-center md:text-left">
+												<h6 class="text-white font-black text-2xl mb-4">
+													RESULTADOS REAIS DO NOSSO SISTEMA:
+												</h6>
+												<div class="space-y-3">
+													<div class="bg-white/20 backdrop-blur-sm p-3 rounded-lg">
+														<p class="text-3xl font-black text-yellow-400">5.5M+</p>
+														<p class="text-white font-medium">Visualizações em 90 dias</p>
+													</div>
+													<div class="bg-white/20 backdrop-blur-sm p-3 rounded-lg">
+														<p class="text-3xl font-black text-green-400">+3.596%</p>
+														<p class="text-white font-medium">Crescimento no Alcance</p>
+													</div>
+													<div class="bg-white/20 backdrop-blur-sm p-3 rounded-lg">
+														<p class="text-3xl font-black text-yellow-400">2.3M+</p>
+														<p class="text-white font-medium">Contas Alcançadas</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mt-4 text-center">
+											<p class="text-yellow-400 font-bold text-lg">
+												"Esta estratégia já provou funcionar em outros projetos!"
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="grid md:grid-cols-2 gap-6">
+									<div class="bg-gray-50 p-4 rounded-xl">
+										<h5 class="font-black text-gray-800 mb-3 flex items-center">
+											✅ INCLUÍDO NO PACOTE
+										</h5>
+										<ul class="space-y-2">
+											<li class="flex items-center text-gray-700">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span class="font-medium">Postagem automática diária do seu acervo</span>
+											</li>
+											<li class="flex items-center text-gray-700">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span class="font-medium">Hashtags otimizadas para furo humanizado</span>
+											</li>
+											<li class="flex items-center text-gray-700">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span class="font-medium">Stories automáticos educativos</span>
+											</li>
+											<li class="flex items-center text-gray-700">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span class="font-medium">Agendamento inteligente</span>
+											</li>
+										</ul>
+									</div>
+									<div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-xl border-2 border-yellow-400">
+										<h5 class="font-black text-gray-800 mb-3 flex items-center">
+											🎯 EXPECTATIVAS PARA EFH
+										</h5>
+										<div class="bg-yellow-200/50 p-3 rounded-lg mb-3">
+											<p class="text-center text-sm font-bold text-gray-800">
+												Projeção: 7.000 views × 30 posts × 30 dias = <span class="text-yellow-700">6.3M visualizações/mês</span>
+											</p>
+										</div>
+										<div class="space-y-3">
+											<div class="flex items-center justify-between">
+												<span class="font-medium text-gray-700">Economia de tempo:</span>
+												<span class="font-black text-yellow-600">10h/semana</span>
+											</div>
+											<div class="flex items-center justify-between">
+												<span class="font-medium text-gray-700">Crescimento alcance:</span>
+												<span class="font-black text-green-600">+3.500%</span>
+											</div>
+											<div class="flex items-center justify-between">
+												<span class="font-medium text-gray-700">Meta visualizações/mês:</span>
+												<span class="font-black text-yellow-600">6.3M+</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Serviço 2: Otimização Landing Pages -->
+							<div class="bg-white rounded-2xl shadow-xl p-8 hover-lift border-2 border-yellow-400/20">
+								<div class="flex items-center mb-6">
+									<div class="gold-gradient p-4 rounded-2xl mr-6 shine-effect">
+										<span class="text-black text-2xl font-bold">🎯</span>
+									</div>
+									<div class="flex-grow">
+										<h4 class="text-2xl font-display font-bold text-gray-900 mb-2">OTIMIZAÇÃO DE LANDING PAGES</h4>
+										<p class="text-gray-600 font-medium">Migração + 100 testes A/B automatizados</p>
+									</div>
+								</div>
+						
+								<div class="grid md:grid-cols-2 gap-6">
+									<div class="bg-black p-6 rounded-xl">
+										<h5 class="font-black text-yellow-400 mb-3">📤 MIGRAÇÃO PREMIUM</h5>
+										<div class="mb-4">
+											<p class="text-3xl font-black text-white mb-1">R$ 80</p>
+											<p class="text-gray-300 text-sm">por página migrada</p>
+										</div>
+										<ul class="space-y-2">
+											<li class="flex items-center text-gray-300">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span>Stack otimizado para conversão</span>
+											</li>
+											<li class="flex items-center text-gray-300">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span>Identidade visual preservada</span>
+											</li>
+											<li class="flex items-center text-gray-300">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span>50% mais velocidade</span>
+											</li>
+											<li class="flex items-center text-gray-300">
+												<span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+												<span>SEO otimizado</span>
+											</li>
+										</ul>
+									</div>
+									
+									<div class="gold-gradient p-6 rounded-xl">
+										<h5 class="font-black text-black mb-3">🧪 TESTES A/B PREMIUM</h5>
+										<div class="mb-4">
+											<div class="flex items-baseline gap-2">
+												<p class="text-3xl font-black text-black">R$ 100</p>
+												<span class="text-black/70 text-sm">pacote completo</span>
+											</div>
+											<p class="text-black/70 text-sm">100 testes automatizados</p>
+										</div>
+										<ul class="space-y-2">
+											<li class="flex items-center text-black">
+												<span class="w-2 h-2 bg-black rounded-full mr-3"></span>
+												<span class="font-medium">Copy, cores, seções</span>
+											</li>
+											<li class="flex items-center text-black">
+												<span class="w-2 h-2 bg-black rounded-full mr-3"></span>
+												<span class="font-medium">CTA otimização automática</span>
+											</li>
+											<li class="flex items-center text-black">
+												<span class="w-2 h-2 bg-black rounded-full mr-3"></span>
+												<span class="font-medium">Análise estatística completa</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+						
+								<div class="mt-6 bg-gradient-to-r from-gray-900 to-black p-6 rounded-xl">
+									<h5 class="font-black text-yellow-400 mb-4 text-center">🏆 RESULTADOS GARANTIDOS</h5>
+									<div class="grid md:grid-cols-3 gap-6 text-center mb-4">
+										<div>
+											<p class="text-3xl font-black text-yellow-400 mb-1">85%+</p>
+											<p class="text-gray-300 font-medium">Connect Rate</p>
+										</div>
+										<div>
+											<p class="text-3xl font-black text-white mb-1">95+</p>
+											<p class="text-gray-300 font-medium">PageSpeed Score</p>
+										</div>
+										<div>
+											<p class="text-3xl font-black text-yellow-400 mb-1">100%</p>
+											<p class="text-gray-300 font-medium">Core Web Vitals</p>
+										</div>
+									</div>
+									<div class="border-t border-gray-700 pt-4">
+										<p class="text-gray-300 text-sm text-center mb-2">
+											<strong class="text-yellow-400">Teste A/B Automatizado:</strong> Essas métricas servirão para testar todas as variações da página
+										</p>
+										<div class="bg-yellow-500/10 p-3 rounded-lg text-center">
+											<p class="text-yellow-400 font-bold">
+												📈 Expectativa: <span class="text-white">+20% a +80%</span> de aumento na conversão
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Análise da Landing Page Atual -->
+				<div class="lg:col-span-2 bg-white rounded-xl shadow-lg p-6 mb-8 border border-yellow-200">
+					<h3 class="text-xl font-bold text-gray-800 mb-4 text-center flex items-center justify-center">
+						🔍 Análise da Sua Landing Page Atual
+					</h3>
+					
+					<div class="bg-yellow-50 p-4 rounded-lg mb-4">
+						<p class="text-center text-gray-700">
+							<strong>Referência analisada:</strong> 
+							<a href="https://lp.damasdalampada.com.br/" target="_blank" 
+							   class="text-yellow-600 hover:text-yellow-700 underline font-medium">
+								lp.damasdalampada.com.br
+							</a>
+						</p>
+					</div>
+					
+					<div class="grid md:grid-cols-3 gap-6">
+						<div class="text-center">
+							<div class="bg-green-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">
+								<span class="text-green-700 font-bold">✓</span>
+							</div>
+							<h4 class="font-semibold text-gray-700 mb-2">Pontos Fortes</h4>
+							<ul class="text-sm text-gray-600 space-y-1">
+								<li>• Design profissional dourado/preto</li>
+								<li>• Depoimentos convincentes</li>
+								<li>• Storytelling emocional</li>
+								<li>• Oferta clara R$ 997</li>
+							</ul>
+						</div>
+						
+						<div class="text-center">
+							<div class="bg-yellow-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">
+								<span class="text-yellow-700 font-bold">⚡</span>
+							</div>
+							<h4 class="font-semibold text-gray-700 mb-2">Oportunidades</h4>
+							<ul class="text-sm text-gray-600 space-y-1">
+								<li>• Velocidade de carregamento</li>
+								<li>• Otimização de conversão</li>
+								<li>• Testes A/B automáticos</li>
+								<li>• SEO aprimorado</li>
+							</ul>
+						</div>
+						
+						<div class="text-center">
+							<div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">
+								<span class="text-blue-700 font-bold">🎯</span>
+							</div>
+							<h4 class="font-semibold text-gray-700 mb-2">Nossa Proposta</h4>
+							<ul class="text-sm text-gray-600 space-y-1">
+								<li>• Migração otimizada</li>
+								<li>• 100 testes automáticos</li>
+								<li>• Manutenção da identidade</li>
+								<li>• +25% de conversão</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Resumo da Proposta Premium -->
+				<div class="lg:col-span-2 black-gradient rounded-3xl shadow-2xl p-8 relative overflow-hidden">
+					<div class="absolute inset-0 gold-gradient opacity-5"></div>
+					<div class="relative z-10">
+						<div class="text-center mb-8">
+							<h3 class="text-4xl font-display font-bold text-white mb-4">
+								💎 PROPOSTA PERSONALIZADA
+							</h3>
+							<p class="text-yellow-400 text-lg font-medium">
+								Desenvolvida especificamente para a Escola do Furo Humanizado
+							</p>
+						</div>
+						
+						<div class="grid md:grid-cols-2 gap-6 mb-8">
+							<div class="gold-gradient p-6 rounded-2xl hover-lift">
+								<h4 class="text-xl font-display font-bold text-black mb-3">
+									📱 AUTOMAÇÃO INSTAGRAM
+								</h4>
+								<p class="text-black/80 mb-4 font-medium">
+									Sistema completo para seu acervo de 7.000+ alunas
+								</p>
+								<div class="flex items-baseline gap-2">
+									<p class="text-3xl font-black text-black">R$ 197</p>
+									<span class="text-black/70">/mês</span>
+								</div>
+							</div>
+							
+							<div class="bg-white p-6 rounded-2xl hover-lift border-2 border-yellow-400">
+								<h4 class="text-xl font-display font-bold text-black mb-3">
+									🎯 OTIMIZAÇÃO LANDING PAGES
+								</h4>
+								<p class="text-gray-700 mb-4 font-medium">
+									Migração + 100 testes A/B baseados na sua página atual
+								</p>
+								<div class="flex items-baseline gap-2">
+									<p class="text-3xl font-black text-black">R$ 180</p>
+									<span class="text-gray-600">total</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+							<p class="text-white text-lg mb-4">
+								<strong>"Jaqueline, analisamos sua landing page atual em lp.damasdalampada.com.br 
+								e identificamos oportunidades para potencializar ainda mais seus resultados."</strong>
+							</p>
+							
+							<div class="grid md:grid-cols-3 gap-4 mb-6">
+								<div class="text-center">
+									<p class="text-2xl font-bold text-yellow-400">7.000+</p>
+									<p class="text-white/80">Alunas Formadas</p>
+								</div>
+								<div class="text-center">
+									<p class="text-2xl font-bold text-yellow-400">12</p>
+									<p class="text-white/80">Países Atendidos</p>
+								</div>
+								<div class="text-center">
+									<p class="text-2xl font-bold text-yellow-400">MEC</p>
+									<p class="text-white/80">Certificação</p>
+								</div>
+							</div>
+							
+							<div class="gold-gradient p-4 rounded-xl inline-block">
+								<p class="text-black font-black text-lg">
+									🚀 VAMOS POTENCIALIZAR SEU SUCESSO DIGITAL?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="mt-12 text-center">
+				<div class="bg-white rounded-xl shadow-lg p-6 max-w-md mx-auto">
+					<h3 class="font-bold text-gray-800 mb-2">Contato RCDNC</h3>
+					<p class="text-sm text-gray-600 mb-1"><strong>Ricardo Dinucci</strong></p>
+					<p class="text-sm text-gray-600 mb-1">Insider | CEO RCDNC</p>
+					<p class="text-sm text-gray-600 mb-1">📧 ricardo.dinucci@rcdnc.com.br</p>
+					<p class="text-sm text-gray-600">📱 +1(212)202-7177</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
